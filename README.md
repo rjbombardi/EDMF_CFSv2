@@ -1,10 +1,12 @@
 # EDMF_CFSv2
-The Eddy-Diffusivity Mass-Flux (EDMF) Boundary Layer Parameterization ready for implementation into the CFSv2
+The Eddy-Diffusivity Mass-Flux (EDMF) Boundary Layer Parameterization ready for implementation into the CFSv2.
+
+The moninedmf.f files is the EDMF parameterization.
 
 The bcltrigger.f is a subroutine that calculates the Heathed Condensation Framework (HCF; Tawfik et al. 2014,2015a,b) trigger as published in Bombardi et al. (2016).
 The bcltrigger module also contains the namelist variables used to call the EDMF parameterization.
 
-The files compns_v.f and the gbphys_v.f are modified versions of the original subroutines used in the Climate Forecast System (CFSv2) model adaped to work
+The files compns_v.f and the gbphys_v.f are modified versions of the original subroutines used in the Climate Forecast System (CFSv2) model adaped to work with moninedmf.
 
 gbphys_v is the subroutine that calls the EDMF parameterization.
 
